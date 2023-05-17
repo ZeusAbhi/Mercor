@@ -1,0 +1,155 @@
+.cont2{
+display: flex;
+ gap: 0.5vw 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo2:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo2.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo2 {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.cards {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scroll{
+  height: 70vh;
+  position: relative;
+  width: 0.5vw;
+  background-color: white;
+}
+.purple{
+ position:absolute;
+
+  width: 0.5vw;
+  top: 0;
+  height: 0;
+  background-color: purple;
+}
+
+.card {
+  position: absolute;
+  height: 70vh;
+  background: rgb(16, 16, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-1 {
+  background-image : url("card1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-2 {
+  background-image : url("card2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-3 {
+  background-image : url("card3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.big-text{
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  text-align: left;
+}
+.small-text{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #888;
+}
+
+
+.card h2 {
+  font-size: 80px;
+  font-weight: 700;
+   color: black;
+}
+
+.cont3 {
+  color: white;
+  max-width: 50vw;
+  flex: 2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width:1200px)
+{
+  .cont2{ 
+      display:flex;
+      flex-direction: column;
+  }
+  .cont3 {
+    max-width: 100vw;
+    flex: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .big-text{
+    font-size: 3rem;
+  }
+  .card{
+    height: 50vh;
+  }
+  .cards{
+    height: 50vh;
+  }
+}

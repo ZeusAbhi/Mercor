@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+
+}
+span{
+    font-size: 1.125rem;
+}
+.logo2{
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 100%;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vw;
+    position: static;
+    margin-left: 2vw;
+    border: 0px;
+}
+.logoimg{
+ width: 2rem;
+ background: "white" 
+}
+  
+.join{
+    background: white;
+    padding: 0.815rem 1.232rem;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    transform: rotateX(0deg);
+    transition: background  0.4s linear;
+    border: 0px;
+    
+    
+}
+.join:hover>#text{ 
+  animation: text-animate 1s ease-in-out;
+}
+@keyframes text-animate{
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg) translateY(-10%);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.join:hover{
+    background: #a594fd;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-size: 4.5rem;
+  color: white;
+}
+.headerimg{
+   width: 60vw;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 150vh;
+  width: 100%;
+  padding-bottom: 200vh;
+}
+.container .text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text > p {
+    background: linear-gradient( to right, rgb(255, 255, 255) 50%, rgb(37, 37, 37) 50% );
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding-left: 3vw;
+    font-size: 3.87rem;
+    margin-bottom: -80px;
+    font-weight: bolder;
+    transition: .2s background linear;
+}
+@media screen and (max-width:768px){
+  .text>p{
+    font-size: 2rem;
+    margin-bottom: -50px;
+  }
+  .text {
+  }
+  .container {
+    padding-bottom: 300vh;
+  }
+
+  .header h1{
+    font-size: 2.5rem;
+  }
+  .headerimg{
+    width: 100vw;
+  }
+}
+
