@@ -75,21 +75,21 @@ display: flex;
 }
 
 .card-1 {
-  background-image : url("card1.png");
+  background-image : url("https://mercor.vercel.app/card1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-2 {
-  background-image : url("card2.png");
+  background-image : url("https://mercor.vercel.app/card2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-3 {
-  background-image : url("card3.png");
+  background-image : url("https://mercor.vercel.app/card3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
